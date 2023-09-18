@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    
+    list-style: none; /* Elimina la viñeta de la lista no ordenada */
+    padding: 0;
+}
+
+nav ul li {
+    
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para el menú desplegable */
+nav ul ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Animaciones CSS */
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 40px;
+}
+
+/* Estilos específicos para cada sección */
+#inicio {
+    background-color: #f2f2f2;
+}
+
+#servicios {
+    background-color: #e0e0e0;
+}
+
+#contacto {
+    background-color: #f2f2f2;
+}
+
+/* Efecto de paralaje */
+.parallax-section {
+    background-image: url(./image/refris1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    position: relative;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #641d1d;
+    font-size: 24px;
+}
